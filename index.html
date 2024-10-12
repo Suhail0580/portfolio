@@ -1325,15 +1325,15 @@
         function SendEmail(){
           let name = document.getElementById("name").value;
           let email = document.getElementById("email").value;
-          let conatact = document.getElementById("phone").value;
+          let phone = document.getElementById("phone").value;
           let subject = document.getElementById("subject").value;
           let message = document.getElementById("message").value;
         
-          let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+          let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + phone + "<br/> Subject:" + subject + "<br/> Messages:" + message;
         
         Email.send({
             SecureToken : "9c1918cd-c952-4121-84ba-67042349ce2b",
-            Host : "smtp.elasticemail.com",
+            // Host : "smtp.elasticemail.com",
             Username : "suhailakhtar5026@gmail.com",
             Password : "8B41F2628F7EA15FB7C27650A896667B1187",
             To : 'smtp.elasticemail.com',
